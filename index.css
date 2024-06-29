@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+}
+header{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: white;
+   position: fixed;
+    
+
+}
+
+ #header1{
+    padding-left: 20px;
+}
+
+#header1 img {
+    width: 40px;
+    height: 40px;
+}
+
+#header2{
+    padding-right: 70px;
+}
+
+#header2 b{
+    padding:0px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#header2 button{
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    border-style: none;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+
+#demo-page-dropdown{
+    text-align: center;
+    position:absolute;
+    background-color: white;
+   list-style-type: none;
+   width: 150px;
+   font-size: 13px;
+   padding:0px 10px;
+   border-top: 2px;
+   border-top-style: solid;
+   border-top-color:rgb(170, 210, 54);;
+   margin:5px auto;
+  display: none;
+  box-shadow: 0 2px 5px #ccc;
+   
+   
+}
+
+#demo-caret:hover + #demo-page-dropdown{
+    display: block;
+}
+
+#background-image1{
+    
+   background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    height: 100vh;
+    padding: 180px 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#background-image1 h1{
+    
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#background-image1 p{
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+   
+    padding-top: 32px;
+}
+
+#steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height:500px;
+}
+
+#step1{
+    background-color: #5acda6;
+    text-align: center;
+}
+
+#step2{
+    background-color:  #91ac41;
+    text-align: center;
+}
+#step3{
+    background-color:  #e4b476;
+    text-align: center;
+}
+#step4{
+    background-color: #f69dad;
+    text-align: center;
+}
+
+.step-header{
+    color:white;
+    text-align: center;
+    font-size:25px ;
+}
+.step-para{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    padding:20px 50px;
+}
+
+.step-icon{
+    cursor: pointer;
+    margin-top: 100px;
+    color: white;
+    font-size: 90px;
+    transition: transform;
+    transition-duration: 200ms;
+}
+
+.step-icon:hover{
+    transform:scale(1.3)
+    
+}
+
+#store{
+   background-color: #f7eee2;
+}
+
+#store-para{
+    
+    color: #91ac41;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0px;
+    padding-top: 70px;
+}
+#store-heading{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#store-desc{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+    padding: 0px 320px;
+}
+
+#store-items{
+   
+    width: 90%;
+   
+    height:400px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.store-item h2{
+    text-align: center;
+    font-weight: 600;
+}
+
+.store-item p{
+    text-align: center;
+    color: #8b8b99;
+    padding: 0px 40px;
+}
+
+.store-icon{
+    cursor: pointer;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #e3b375;
+    margin: 0px auto;
+    align-items: center;
+    transition: transform;
+    transition-duration: 200ms;
+}
+
+.icon{
+    margin:0px auto;
+    color:white;
+    font-size: 60px;
+}
+
+.store-icon:hover{
+    transform: scale(1.1);
+}
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#testimonial{
+    display: grid;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:500px;
+   
+    margin:0px auto;
+    gap: 20px;
+}
+
+.testimonial-item{
+    background-color: #f5f6fb;
+    text-align: center;
+    height: 450px;
+    width:95%;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.testimonial-image{
+    margin-top:50px;
+    width: 100px;
+    height:100px;
+    border-radius: 50px;
+}
+.testimonial-desc{
+    padding:20px 30px;
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0
+}
+.testimonial-item h3{
+    margin: 0;
+    font-weight: 600;
+}
+
+.testimonial-role{
+    margin: 0;
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+#follow-section{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#left-image{
+    width:100%
+}
+#right-section{
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    background-size: cover;
+    display: flex;
+    padding: 100px 80px;
+    justify-content: center;
+    text-align: center;
+}
+
+#mail{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    outline: 0;
+}
+#submit-btn{
+    background-color: #f69dad;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    text-align: left;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+#submit-btn:hover{
+    background-color:transparent;
+    color: #f69dad;
+    border: 2px solid  #f69dad
+}
+
+#stats-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width:80%;
+    height:200px;
+    margin:0px auto;
+}
+
+#stats-section h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#stats-section p{
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+#stats-section div{
+    text-align: center;
+}
+
+#video-section{
+    text-align: center;
+}
+
+#video-section h3{
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+#line{
+    width: 100px;
+    height:1px;
+    background-color: brown;
+    margin:0px auto;
+    margin-bottom: 30px;
+}
+
+#video-container{
+    width: 100%;
+    height: 425px;
+}
+
+#contact-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin:0px auto;
+    padding-bottom: 50px;
+}
+
+#right-contact-section{
+    padding-left: 100px;
+}
+
+.green-heading{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+#contact-us h3{
+    font-size: 34px;
+    margin: 0;
+}
+
+.heading-desc{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin:0;
+    margin-bottom: 30px;
+}
+
+#contact-us h4{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.input-box{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    box-sizing: border-box
+}
+
+.btn-submit{
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+footer{
+    height:100px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+   
+    
+}
